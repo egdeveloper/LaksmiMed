@@ -17,11 +17,15 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/rest-service")
 public class DoctorWebService implements IDoctorWebService{
 
-    @Autowired
-    private IDoctorService doctorService;
+    private final IDoctorService doctorService;
+
+    private final IAuthService authService;
 
     @Autowired
-    private IAuthService authService;
+    public DoctorWebService(IAuthService authService, IDoctorService doctorService) {
+        this.authService = authService;
+        this.doctorService = doctorService;
+    }
 
     @Override
     @RequestMapping(value = "/doctor", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
