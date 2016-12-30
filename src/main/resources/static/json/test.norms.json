@@ -1,0 +1,722 @@
+{
+    "norms": {
+        "tests": [
+            {
+                "testName": "commonBloodTest",
+                "indicators": [
+                    {
+                        "min": {
+                            "error": 10.0,
+                            "value": 120.0
+                        },
+                        "max": {
+                            "error": 10.0,
+                            "value": 140.0
+                        },
+                        "indicatorName": "hemoglobin"
+                    },
+                    {
+                        "min": {
+                            "error": 0.5e12,
+                            "value": 3.7e12
+                        },
+                        "max": {
+                            "error": 0.512,
+                            "value": 4.7e12
+                        },
+                        "indicatorName": "RBCells"
+                    },
+                    {
+                        "min": {
+                            "error": 0.1,
+                            "value": 0.85
+                        },
+                        "max": {
+                            "error": 0.1,
+                            "value": 1.15
+                        },
+                        "indicatorName": "colorIndex"
+                    },
+                    {
+                        "min": {
+                            "error": 0.1,
+                            "value": 0.2
+                        },
+                        "max": {
+                            "error": 0.1,
+                            "value": 1.2
+                        },
+                        "indicatorName": "ImRBCells"
+                    },
+                    {
+                        "min": {
+                            "error": 20.0e9,
+                            "value": 180.0e9
+                        },
+                        "max": {
+                            "error": 20.0e9,
+                            "value": 320.0e9
+                        },
+                        "indicatorName": "platelets"
+                    },
+                    {
+                        "min": {
+                            "error": 1.0,
+                            "value": 2
+                        },
+                        "max": {
+                            "error": 3.0,
+                            "value": 15
+                        },
+                        "indicatorName": "ESR"
+                    },
+                    {
+                        "min": {
+                            "error": 1.0e9,
+                            "value": 4.0e9
+                        },
+                        "max": {
+                            "error": 2.0e9,
+                            "value": 9.0e9
+                        },
+                        "indicatorName": "WBCells"
+                    },
+                    {
+                        "min": {
+                            "error": 0.5,
+                            "value": 1
+                        },
+                        "max": {
+                            "error": 1.0,
+                            "value": 6
+                        },
+                        "indicatorName": "bandCells"
+                    },
+                    {
+                        "min": {
+                            "error": 10.0,
+                            "value": 47.0
+                        },
+                        "max": {
+                            "error": 10.0,
+                            "value": 72.0
+                        },
+                        "indicatorName": "segmentCells"
+                    },
+                    {
+                        "min": {
+                            "error": 0.0,
+                            "value": 0.0
+                        },
+                        "max": {
+                            "error": 1.0,
+                            "value": 5.0
+                        },
+                        "indicatorName": "eosinCells"
+                    },
+                    {
+                        "min": {
+                            "error": 0.0,
+                            "value": 0.0
+                        },
+                        "max": {
+                            "error": 0.1,
+                            "value": 1
+                        },
+                        "indicatorName": "basophil"
+                    },
+                    {
+                        "min": {
+                            "error": 5.0,
+                            "value": 18
+                        },
+                        "max": {
+                            "error": 5.0,
+                            "value": 40
+                        },
+                        "indicatorName": "NKCells"
+                    },
+                    {
+                        "min": {
+                            "error": 1.0,
+                            "value": 2.0
+                        },
+                        "max": {
+                            "error": 2.0,
+                            "value": 9.0
+                        },
+                        "indicatorName": "monoCells"
+                    }
+                ]
+            },
+            {
+                "testName": "dailyExcreationTest",
+                "indicators": [
+                    {
+                        "min": {
+                            "error": 0.5,
+                            "value": 4.4
+                        },
+                        "max": {
+                            "error": 2.0,
+                            "value": 17.26
+                        },
+                        "indicatorName": "creatinine"
+                    },
+                    {
+                        "min": {
+                            "error": 30.0,
+                            "value": 333.0
+                        },
+                        "max": {
+                            "error": 60.0,
+                            "value": 582.8
+                        },
+                        "indicatorName": "urea"
+                    },
+                    {
+                        "min": {
+                            "error": 0.2,
+                            "value": 1.62
+                        },
+                        "max": {
+                            "error": 0.3,
+                            "value": 3.6
+                        },
+                        "indicatorName": "ureaAcid"
+                    },
+                    {
+                        "min": {
+                            "error": 0.2,
+                            "value": 2.5
+                        },
+                        "max": {
+                            "error": 0.7,
+                            "value": 7.5
+                        },
+                        "indicatorName": "calcium"
+                    },
+                    {
+                        "min": {
+                            "error": 3.0,
+                            "value": 30.0
+                        },
+                        "max": {
+                            "error": 10.0,
+                            "value": 100.0
+                        },
+                        "indicatorName": "potassium"
+                    },
+                    {
+                        "min": {
+                            "error": 0.05,
+                            "value": 0.5
+                        },
+                        "max": {
+                            "error": 0.5,
+                            "value": 4.2
+                        },
+                        "indicatorName": "magnesium"
+                    },
+                    {
+                        "min": {
+                            "error": 10.0,
+                            "value": 130.0
+                        },
+                        "max": {
+                            "error": 30.0,
+                            "value": 260.0
+                        },
+                        "indicatorName": "sodium"
+                    },
+                    {
+                        "min": {
+                            "error": 1.5,
+                            "value": 12.9
+                        },
+                        "max": {
+                            "error": 5.0,
+                            "value": 40
+                        },
+                        "indicatorName": "phosphorOxide"
+                    },
+                    {
+                        "min": {
+                            "error": 11.0,
+                            "value": 110.0
+                        },
+                        "max": {
+                            "error": 25.0,
+                            "value": 250.0
+                        },
+                        "indicatorName": "chlorine"
+                    }
+                ]
+            },
+            {
+                "testName": "bioChemTest",
+                "indicators": [
+                    {
+                        "min": {
+                            "error": 10.0,
+                            "value": 66.0
+                        },
+                        "max": {
+                            "error": 10.0,
+                            "value": 87.0
+                        },
+                        "indicatorName": "commonProtein"
+                    },
+                    {
+                        "min": {
+                            "error": 0.5,
+                            "value": 1.7
+                        },
+                        "max": {
+                            "error": 0.5,
+                            "value": 8.3
+                        },
+                        "indicatorName": "urea"
+                    },
+                    {
+                        "min": {
+                            "error": 10.0,
+                            "value": 53.0
+                        },
+                        "max": {
+                            "error": 10.0,
+                            "value": 115.0
+                        },
+                        "indicatorName": "creatinine"
+                    },
+                    {
+                        "min": {
+                            "error": 0.5,
+                            "value": 2.0
+                        },
+                        "max": {
+                            "error": 3.0,
+                            "value": 21.0
+                        },
+                        "indicatorName": "commonBiliRuby"
+                    },
+                    {
+                        "min": {
+                            "error": 0.0,
+                            "value": 0.0
+                        },
+                        "max": {
+                            "error": 0.5,
+                            "value": 34.0
+                        },
+                        "indicatorName": "linkedBiliRuby"
+                    },
+                    {
+                        "min": {
+                            "error": 0.5,
+                            "value": 3.63
+                        },
+                        "max": {
+                            "error": 0.5,
+                            "value": 5.2
+                        },
+                        "indicatorName": "cholesterol"
+                    },
+                    {
+                        "min": {
+                            "error": 0.0,
+                            "value": 0.0
+                        },
+                        "max": {
+                            "error": 0.1,
+                            "value": 1.7
+                        },
+                        "indicatorName": "TAG"
+                    },
+                    {
+                        "min": {
+                            "error": 0.1,
+                            "value": 0.9
+                        },
+                        "max": {
+                            "error": 0.1,
+                            "value": 1.54
+                        },
+                        "indicatorName": "HDL"
+                    },
+                    {
+                        "min": {
+                            "error": 0.2,
+                            "value": 1.2
+                        },
+                        "max": {
+                            "error": 0.2,
+                            "value": 4.4
+                        },
+                        "indicatorName": "LDL"
+                    },
+                    {
+                        "min": {
+                            "error": 0.0,
+                            "value": 0.0
+                        },
+                        "max": {
+                            "error": 0.2,
+                            "value": 3.0
+                        },
+                        "indicatorName": "cholesterolRatio"
+                    },
+                    {
+                        "min": {
+                            "error": 0.0,
+                            "value": 0.0
+                        },
+                        "max": {
+                            "error": 5.0,
+                            "value": 42
+                        },
+                        "indicatorName": "ALT"
+                    },
+                    {
+                        "min": {
+                            "error": 0.0,
+                            "value": 0.0
+                        },
+                        "max": {
+                            "error": 5.0,
+                            "value": 37.0
+                        },
+                        "indicatorName": "AST"
+                    },
+                    {
+                        "min": {
+                            "error": 10.0,
+                            "value": 80.0
+                        },
+                        "max": {
+                            "error": 30.0,
+                            "value": 306.0
+                        },
+                        "indicatorName": "ALKP"
+                    },
+                    {
+                        "min": {
+                            "error": 10.0,
+                            "value": 24.0
+                        },
+                        "max": {
+                            "error": 20.0,
+                            "value": 190.0
+                        },
+                        "indicatorName": "CK"
+                    },
+                    {
+                        "min": {
+                            "error": 0.0,
+                            "value": 0.0
+                        },
+                        "max": {
+                            "error": 3.0,
+                            "value": 25.0
+                        },
+                        "indicatorName": "CKMB"
+                    },
+                    {
+                        "min": {
+                            "error": 30.0,
+                            "value": 225.0
+                        },
+                        "max": {
+                            "error": 30.0,
+                            "value": 450.0
+                        },
+                        "indicatorName": "LDH"
+                    },
+                    {
+                        "min": {
+                            "error": 5.0,
+                            "value": 11.0
+                        },
+                        "max": {
+                            "error": 5.0,
+                            "value": 61.0
+                        },
+                        "indicatorName": "GGT"
+                    },
+                    {
+                        "min": {
+                            "error": 5.0,
+                            "value": 28.0
+                        },
+                        "max": {
+                            "error": 10.0,
+                            "value": 100.0
+                        },
+                        "indicatorName": "amylase"
+                    },
+                    {
+                        "min": {
+                            "error": 0.0,
+                            "value": 0.0
+                        },
+                        "max": {
+                            "error": 5.0,
+                            "value": 53.0
+                        },
+                        "indicatorName": "pancrAmylase"
+                    },
+                    {
+                        "min": {
+                            "error": 0.5,
+                            "value": 4.2
+                        },
+                        "max": {
+                            "error": 0.5,
+                            "value": 6.4
+                        },
+                        "indicatorName": "glucose"
+                    },
+                    {
+                        "min": {
+                            "error": 50.0,
+                            "value": 200.0
+                        },
+                        "max": {
+                            "error": 50.0,
+                            "value": 420.0
+                        },
+                        "indicatorName": "ureaAcid"
+                    },
+                    {
+                        "min": {
+                            "error": 0.0,
+                            "value": 0.0
+                        },
+                        "max": {
+                            "error": 0.5,
+                            "value": 5.0
+                        },
+                        "indicatorName": "CRP"
+                    },
+                    {
+                        "min": {
+                            "error": 0.0,
+                            "value": 0.0
+                        },
+                        "max": {
+                            "error": 5.0,
+                            "value": 40.0
+                        },
+                        "indicatorName": "RF"
+                    },
+                    {
+                        "min": {
+                            "error": 0.5,
+                            "value": 3.5
+                        },
+                        "max": {
+                            "error": 0.5,
+                            "value": 5.1
+                        },
+                        "indicatorName": "potassium"
+                    },
+                    {
+                        "min": {
+                            "error": 2.0,
+                            "value": 136.0
+                        },
+                        "max": {
+                            "error": 2.0,
+                            "value": 145.0
+                        },
+                        "indicatorName": "sodium"
+                    },
+                    {
+                        "min": {
+                            "error": 2.0,
+                            "value": 98.0
+                        },
+                        "max": {
+                            "error": 2.0,
+                            "value": 107.0
+                        },
+                        "indicatorName": "chlorine"
+                    },
+                    {
+                        "min": {
+                            "error": 0.1,
+                            "value": 2.02
+                        },
+                        "max": {
+                            "error": 0.1,
+                            "value": 2.6
+                        },
+                        "indicatorName": "commonCalcium"
+                    },
+                    {
+                        "min": {
+                            "error": 0.05,
+                            "value": 1.16
+                        },
+                        "max": {
+                            "error": 0.05,
+                            "value": 1.32
+                        },
+                        "indicatorName": "ionCalcium"
+                    },
+                    {
+                        "min": {
+                            "error": 0.1,
+                            "value": 0.81
+                        },
+                        "max": {
+                            "error": 0.1,
+                            "value": 1.62
+                        },
+                        "indicatorName": "phosphor"
+                    },
+                    {
+                        "min": {
+                            "error": 2.0,
+                            "value": 10.7
+                        },
+                        "max": {
+                            "error": 2.0,
+                            "value": 28.6
+                        },
+                        "indicatorName": "ferrum"
+                    },
+                    {
+                        "min": {
+                            "error": 5.0,
+                            "value": 31.5
+                        },
+                        "max": {
+                            "error": 20.0,
+                            "value": 231.7
+                        },
+                        "indicatorName": "ferritin"
+                    }
+                ]
+            },
+            {
+                "testName": "ureaColorTest",
+                "indicators": [
+                    {
+                        "min": {
+                            "error": 20.0,
+                            "value": 180.0
+                        },
+                        "max": {
+                            "error": 30.0,
+                            "value": 282.0
+                        },
+                        "indicatorName": "ClSalt"
+                    },
+                    {
+                        "min": {
+                            "error": 0.05,
+                            "value": 0.0
+                        },
+                        "max": {
+                            "error": 0.05,
+                            "value": 0.0
+                        },
+                        "indicatorName": "NO2Salt"
+                    },
+                    {
+                        "min": {
+                            "error": 0.1,
+                            "value": 0.8
+                        },
+                        "max": {
+                            "error": 0.2,
+                            "value": 2.26
+                        },
+                        "indicatorName": "NO3Salt"
+                    },
+                    {
+                        "min": {
+                            "error": 3.0,
+                            "value": 26.6
+                        },
+                        "max": {
+                            "error": 4.0,
+                            "value": 42.0
+                        },
+                        "indicatorName": "SO3Salt"
+                    },
+                    {
+                        "min": {
+                            "error": 1.0,
+                            "value": 10.5
+                        },
+                        "max": {
+                            "error": 6.0,
+                            "value": 68.0
+                        },
+                        "indicatorName": "PO3Salt"
+                    },
+                    {
+                        "min": {
+                            "error": 0.2,
+                            "value": 2.4
+                        },
+                        "max": {
+                            "error": 0.5,
+                            "value": 5.3
+                        },
+                        "indicatorName": "citrate"
+                    },
+                    {
+                        "min": {
+                            "error": 0.07,
+                            "value": 0.7
+                        },
+                        "max": {
+                            "error": 0.2,
+                            "value": 2.0
+                        },
+                        "indicatorName": "isoCitrate"
+                    },
+                    {
+                        "min": {
+                            "error": 0.6,
+                            "value": 6.5
+                        },
+                        "max": {
+                            "error": 1.3,
+                            "value": 13.0
+                        },
+                        "indicatorName": "ureaAcid"
+                    },
+                    {
+                        "min": {
+                            "error": 80.0,
+                            "value": 800.0
+                        },
+                        "max": {
+                            "error": 150.0,
+                            "value": 1500.0
+                        },
+                        "indicatorName": "DUV"
+                    }
+                ]
+            },
+            {
+                "testName": "titrationTest",
+                "indicators": {
+                    "min": {
+                        "error": 5.0,
+                        "value": 30.0
+                    },
+                    "max": {
+                        "error": 5.0,
+                        "value": 60.0
+                    },
+                    "indicatorName": "oxalate"
+                }
+            }
+        ]
+    }
+}

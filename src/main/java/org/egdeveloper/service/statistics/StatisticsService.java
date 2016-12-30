@@ -50,14 +50,11 @@ import static java.lang.Math.sqrt;
 @Service
 public class StatisticsService implements IStatisticsService{
 
-    @Autowired
-    private IPatientService patientService;
+    private final IPatientService patientService;
 
-    @Autowired
-    private SessionFactory sessionFactory;
+    private final SessionFactory sessionFactory;
 
-    @Autowired
-    private MedTestMetaProvider testMetaProvider;
+    private final MedTestMetaProvider testMetaProvider;
 
     private DateTimeFormatter formatter = DateTimeFormat.forPattern("yyyy-MM-dd");
 
@@ -66,8 +63,15 @@ public class StatisticsService implements IStatisticsService{
     private Map<String, Field> testsGetters = new HashMap<>();
     private Map<Class, Field> testFields = new HashMap<>();
 
+    private final EntityInfoGetterHelper ei;
+
     @Autowired
-    private EntityInfoGetterHelper ei;
+    public StatisticsService(IPatientService patientService, SessionFactory sessionFactory, MedTestMetaProvider testMetaProvider, EntityInfoGetterHelper ei) {
+        this.patientService = patientService;
+        this.sessionFactory = sessionFactory;
+        this.testMetaProvider = testMetaProvider;
+        this.ei = ei;
+    }
 
     @PostConstruct
     public void initService(){
@@ -157,7 +161,7 @@ public class StatisticsService implements IStatisticsService{
         Transaction tx = null;
         try (Session session = sessionFactory.openSession()) {
             tx = session.beginTransaction();
-            Query query = session.createSQLQuery("CALL collect_StCsDevsStat(:treatment_number)")
+            Query query = session.createSQLQuery("SELECT * FROM collect_stcsdevsstat(:treatment_number)")
                     .setParameter("treatment_number", treatmentNumber.toString())
                     .setResultTransformer(Transformers.ALIAS_TO_ENTITY_MAP);
             Map stCsDevsStat_ = new HashMap<>();
@@ -188,7 +192,7 @@ public class StatisticsService implements IStatisticsService{
         Transaction tx = null;
         try(Session session = sessionFactory.openSession()){
             tx = session.beginTransaction();
-            Query query = session.createSQLQuery("CALL collect_StoneAndDiseaseStat(:treatmentNumber)")
+            Query query = session.createSQLQuery("SELECT * FROM collect_StoneAndDiseaseStat(:treatmentNumber)")
                     .setParameter("treatmentNumber", treatmentNumber.toString());
             List<Object[]> rows = query.list();
             Map<String, DiseaseStat> result = new HashMap<>();

@@ -11,8 +11,9 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 /**
  * Created by Roman Baygildin (rvyarnykh@edu.hse.ru) on 30.12.16.
  */
-//@Configuration
-//@EnableWebMvc
+
+@Configuration
+@EnableWebMvc
 public class WebConfig extends WebMvcConfigurerAdapter{
 
     @Override

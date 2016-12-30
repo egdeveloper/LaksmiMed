@@ -9,8 +9,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
  * Created by Roman Baygildin (rvyarnykh@edu.hse.ru) on 30.12.16.
  */
 
-//@Configuration
-//@EnableWebSecurity
+@Configuration
+@EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter{
 
     @Override

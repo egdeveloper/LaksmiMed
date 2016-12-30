@@ -1,0 +1,84 @@
+{
+    "chemInfo": {
+        "tests": [
+            {
+                "component": [
+                    {
+                        "componentName": "creatinine",
+                        "molesMass": "113.0"
+                    },
+                    {
+                        "componentName": "urea",
+                        "molesMass": "60.0"
+                    },
+                    {
+                        "componentName": "ureaAcid",
+                        "molesMass": "168.0"
+                    },
+                    {
+                        "componentName": "calcium",
+                        "molesMass": "40.0"
+                    },
+                    {
+                        "componentName": "potassium",
+                        "molesMass": "39.0"
+                    },
+                    {
+                        "componentName": "magnesium",
+                        "molesMass": "24.0"
+                    },
+                    {
+                        "componentName": "sodium",
+                        "molesMass": "23.0"
+                    },
+                    {
+                        "componentName": "phosphorOxide",
+                        "molesMass": "95.0"
+                    },
+                    {
+                        "componentName": "chlorine",
+                        "molesMass": "35.5"
+                    }
+                ],
+                "componentName": "dailyExcreationTest"
+            },
+            {
+                "component": [
+                    {
+                        "componentName": "ClSalt",
+                        "molesMass": "35.5"
+                    },
+                    {
+                        "componentName": "NO2Salt",
+                        "molesMass": "46.0"
+                    },
+                    {
+                        "componentName": "NO3Salt",
+                        "molesMass": "62.0"
+                    },
+                    {
+                        "componentName": "SO3Salt",
+                        "molesMass": "96.0"
+                    },
+                    {
+                        "componentName": "PO3Salt",
+                        "molesMass": "95.0"
+                    },
+                    {
+                        "componentName": "citrate",
+                        "molesMass": "189.0"
+                    },
+                    {
+                        "componentName": "isoCitrate",
+                        "molesMass": "189.0"
+                    },
+                    {
+                        "componentName": "ureaAcid",
+                        "molesMass": "168.0"
+                    }
+                ],
+                "componentName": "ureaColorTest"
+            }
+        ]
+    }
+}

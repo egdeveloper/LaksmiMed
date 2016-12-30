@@ -12,9 +12,12 @@ import org.springframework.stereotype.Service;
 @Service("userAuthService")
 public class AuthService implements IAuthService {
 
+    private final IDoctorService doctorService;
+
     @Autowired
-    @Qualifier("doctorService")
-    private IDoctorService doctorService;
+    public AuthService(@Qualifier("doctorService") IDoctorService doctorService) {
+        this.doctorService = doctorService;
+    }
 
     @Override
     public void register(Signup newUserAccount){
