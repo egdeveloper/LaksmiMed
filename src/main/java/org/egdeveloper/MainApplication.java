@@ -5,12 +5,12 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @SpringBootApplication
-//@EnableWebMvc
+@EnableWebMvc
 @EnableCaching
 @EnableAutoConfiguration
-//@Import({WebConfig.class, RepositoryConfig.class, SecurityConfig.class})
 @ComponentScan(basePackages = "org.egdeveloper")
 public class MainApplication {
 
