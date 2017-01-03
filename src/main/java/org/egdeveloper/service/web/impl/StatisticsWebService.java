@@ -1,8 +1,9 @@
-package org.egdeveloper.service.web;
+package org.egdeveloper.service.web.impl;
 
 import org.egdeveloper.data.model.customTypes.TreatmentNumber;
 import org.egdeveloper.helpers.EntityInfoGetterHelper;
 import org.egdeveloper.service.statistics.IStatisticsService;
+import org.egdeveloper.service.web.IStatisticsWebService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +19,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/stat-service")
-public class StatisticsWebService implements IStatisticsWebService{
+public class StatisticsWebService implements IStatisticsWebService {
 
     @Autowired
     private IStatisticsService service;

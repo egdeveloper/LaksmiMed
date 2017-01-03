@@ -55,7 +55,7 @@ public class MainController {
     @RequestMapping(value = "/doctor/update-info", method = RequestMethod.POST)
     public String updatePersonalDoctorInfo(@ModelAttribute Doctor doctor, BindingResult bindingResult){
         if(!bindingResult.hasErrors())
-            doctorService.updateDoctorInfo(doctor);
+            doctorService.updateDoctor(doctor);
         return "redirect:/personalPage";
     }
 
@@ -83,7 +83,7 @@ public class MainController {
                                      HttpSession session)
     {
         Doctor doctorAccount = (Doctor)session.getAttribute("doctor");
-        patientService.removePatientAndUpdateDoctor(doctorAccount, patientID);
+        patientService.deletePatient(doctorAccount, patientID);
         return "redirect:/doctor/patients";
     }
 

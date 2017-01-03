@@ -1,4 +1,4 @@
-package org.egdeveloper.service.exception;
+package org.egdeveloper.exception;
 
 public class UserExistingException extends Exception{
 

@@ -1,5 +1,6 @@
 package org.egdeveloper.data.dao;
 
+import org.egdeveloper.data.dao.impl.DoctorDAO;
 import org.egdeveloper.data.model.Doctor;
 
 import java.util.List;
@@ -9,7 +10,7 @@ import java.util.List;
  * @author Yarnykh Roman egdeveloper@mail.ru
  * @version 1.0
  * @since 05.01.2016 (5th January 2016)
- * @see org.egdeveloper.data.dao.DoctorDAO
+ * @see DoctorDAO
  */
 public interface IDoctorDAO {
 
@@ -17,33 +18,33 @@ public interface IDoctorDAO {
      * Add new doctor's record in database
      * @param doctor new doctor's record
      */
-    void addDoctor(Doctor doctor);
+    void saveDoctor(Doctor doctor);
 
     /**
      * Update existing doctor's record in database
      * @param doctor existing doctor's entry
      */
-    void updateDoctorInfo(Doctor doctor);
+    void updateDoctor(Doctor doctor);
 
     /**
      * Get all doctor's records
      * @return list of existing doctor's records from local database
      */
-    List<Doctor> getDoctors();
+    List<Doctor> findDoctors();
 
     /**
      * Get existing doctor's record by it's login and password
      * @param login login
      * @return existing doctor's record
      */
-    Doctor getDoctorByLogin(String login);
+    Doctor authDoctor(String login);
 
     /**
      * Get doctor's record from local database
      * @param id id of existing doctor's record
      * @return existing doctor's record
      */
-    Doctor getDoctorById(Integer id);
+    Doctor findDoctorById(Integer id);
 
     /**
      * Edit doctor's record in database
@@ -55,5 +56,5 @@ public interface IDoctorDAO {
      * Remove existing doctor's record
      * @param id id of existing doctor's record
      */
-    void removeDoctor(Integer id);
+    void deleteDoctor(Integer id);
 }

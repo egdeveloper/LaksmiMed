@@ -34,7 +34,7 @@ public class PatientController {
         if(bindingResult.hasErrors()) {
             return "PatientPages/PatientEditPage";
         }
-        patientService.addPatient(doctor, patient);
+        patientService.savePatient(doctor, patient);
         sessionStatus.setComplete();
         return "redirect:/patientList";
     }

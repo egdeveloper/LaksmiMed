@@ -22,12 +22,12 @@ public class AuthService implements IAuthService {
     @Override
     public void register(Signup newUserAccount){
         newUserAccount.setPassword(BCrypt.hashpw(newUserAccount.getPassword(), BCrypt.gensalt()));
-        doctorService.addDoctor(newUserAccount.getDoctorAccount());
+        doctorService.saveDoctor(newUserAccount.getDoctorAccount());
     }
 
     @Override
     public Doctor auth(Login login){
-        Doctor doctor = doctorService.getDoctorByLogin(login.getLogin());
+        Doctor doctor = doctorService.authDoctor(login.getLogin());
         if(doctor != null && BCrypt.checkpw(login.getPassword(), doctor.getPassword()))
             return doctor;
         return null;

@@ -1,4 +1,4 @@
-package org.egdeveloper.service.web;
+package org.egdeveloper.service.web.impl;
 
 import org.egdeveloper.data.model.Doctor;
 import org.egdeveloper.data.model.MedicalTest;
@@ -6,6 +6,7 @@ import org.egdeveloper.data.model.Patient;
 import org.egdeveloper.data.model.tempEntities.PatientDTO;
 import org.egdeveloper.service.data.IDoctorService;
 import org.egdeveloper.service.data.IPatientService;
+import org.egdeveloper.service.web.IPatientWebService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.io.IOException;
@@ -19,7 +20,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/rest-service")
-public class PatientWebService implements IPatientWebService{
+public class PatientWebService implements IPatientWebService {
 
     @Autowired
     private IPatientService patientService;
@@ -34,10 +35,10 @@ public class PatientWebService implements IPatientWebService{
             produces = "application/json"
     )
     public Patient addPatient(@PathVariable Integer doctorID, @RequestBody Patient patient) {
-        Doctor doctor = doctorService.getDoctorByID(doctorID);
+        Doctor doctor = doctorService.findDoctorByID(doctorID);
         if(doctor == null)
             throw new RuntimeException(String.format("Doctor with id = %d not found!", doctorID));
-        patientService.addPatient(doctor, patient);
+        patientService.savePatient(doctor, patient);
         return patient;
     }
 
@@ -67,7 +68,7 @@ public class PatientWebService implements IPatientWebService{
     @Override
     @RequestMapping(value = "/doctor/{doctorID}/patients", produces = "application/json")
     public List<PatientDTO> findPatients(@PathVariable Integer doctorID) {
-        Doctor doctor = doctorService.getDoctorByID(doctorID);
+        Doctor doctor = doctorService.findDoctorByID(doctorID);
         if(doctor == null)
             throw new RuntimeException(String.format("Doctor with id = %d not found!", doctorID));
         return patientService.findPatients(doctorID);
@@ -88,7 +89,7 @@ public class PatientWebService implements IPatientWebService{
         Patient patient = patientService.findPatientById(patientID);
         if(patient == null)
             throw new RuntimeException(String.format("Patient with id = %d not found", patientID));
-        patientService.removePatient(patientID);
+        patientService.deletePatient(patientID);
         return patient;
     }
 

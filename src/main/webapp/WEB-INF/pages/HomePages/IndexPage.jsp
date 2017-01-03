@@ -11,7 +11,7 @@
 
 <html>
 <head>
-  <title>Добро пожаловать!</title>
+  <title>Добро пожаловать!!</title>
   <link rel="stylesheet" href="<c:url value="/resources/bootstrap/css/bootstrap.min.css"/>"/>
   <style>
     .carousel-caption{

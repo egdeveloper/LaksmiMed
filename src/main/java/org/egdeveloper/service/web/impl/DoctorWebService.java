@@ -1,8 +1,9 @@
-package org.egdeveloper.service.web;
+package org.egdeveloper.service.web.impl;
 
 import org.egdeveloper.data.model.Doctor;
 import org.egdeveloper.service.data.IDoctorService;
 import org.egdeveloper.service.security.IAuthService;
+import org.egdeveloper.service.web.IDoctorWebService;
 import org.egdeveloper.web.form.Login;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/rest-service")
-public class DoctorWebService implements IDoctorWebService{
+public class DoctorWebService implements IDoctorWebService {
 
     private final IDoctorService doctorService;
 
@@ -30,27 +31,27 @@ public class DoctorWebService implements IDoctorWebService{
     @Override
     @RequestMapping(value = "/doctor", method = RequestMethod.POST, consumes = "application/json", produces = "application/json")
     public Doctor addDoctor(@RequestBody Doctor doctor) {
-        doctorService.addDoctor(doctor);
+        doctorService.saveDoctor(doctor);
         return doctor;
     }
 
     @Override
     @RequestMapping(value = "/doctor", method = RequestMethod.PUT, consumes = "application/json", produces = "application/json")
     public Doctor updateDoctor(@RequestBody Doctor doctor) {
-        doctorService.updateDoctorInfo(doctor);
+        doctorService.updateDoctor(doctor);
         return doctor;
     }
 
     @Override
     @RequestMapping(value = "/doctor/{doctorID}", produces = "application/json")
     public Doctor findDoctor(@PathVariable Integer doctorID) {
-        return doctorService.getDoctorByID(doctorID);
+        return doctorService.findDoctorByID(doctorID);
     }
 
     @Override
     @RequestMapping(value = "/doctor/{doctorID}", method = RequestMethod.DELETE, produces = "application/json")
     public void removeDoctor(@PathVariable Integer doctorID) {
-        doctorService.removeDoctor(doctorID);
+        doctorService.deleteDoctor(doctorID);
     }
 
     @Override
