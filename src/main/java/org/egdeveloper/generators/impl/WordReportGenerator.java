@@ -1,9 +1,10 @@
-package org.egdeveloper.generators;
+package org.egdeveloper.generators.impl;
 
 import org.apache.poi.xwpf.usermodel.*;
 import org.egdeveloper.attributes.DisplayName;
 import org.egdeveloper.data.model.MedicalTest;
 import org.egdeveloper.data.model.Patient;
+import org.egdeveloper.generators.IReportGenerator;
 import org.egdeveloper.helpers.EntityInfoGetterHelper;
 import org.joda.time.LocalDate;
 import org.joda.time.format.DateTimeFormat;

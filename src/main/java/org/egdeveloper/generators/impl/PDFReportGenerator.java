@@ -1,4 +1,4 @@
-package org.egdeveloper.generators;
+package org.egdeveloper.generators.impl;
 
 import com.itextpdf.text.*;
 import com.itextpdf.text.pdf.PdfPCell;
@@ -6,6 +6,7 @@ import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 import org.egdeveloper.data.model.MedicalTest;
 import org.egdeveloper.data.model.Patient;
+import org.egdeveloper.generators.IReportGenerator;
 import org.egdeveloper.helpers.EntityInfoGetterHelper;
 import org.joda.time.LocalDate;
 import org.joda.time.format.DateTimeFormat;
@@ -28,7 +29,7 @@ import java.util.Map;
 
 // TODO: доделать экспорт в pdf
 @Component
-public class PDFReportGenerator implements IReportGenerator{
+public class PDFReportGenerator implements IReportGenerator {
 
     private Map<String, String> fonts_ = new HashMap<>();
 

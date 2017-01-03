@@ -1,11 +1,8 @@
 package org.egdeveloper.config;
 
-import org.egdeveloper.generators.*;
+import org.egdeveloper.generators.impl.*;
 import org.egdeveloper.service.generators.ReportGeneratorService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

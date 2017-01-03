@@ -1,9 +1,10 @@
-package org.egdeveloper.generators;
+package org.egdeveloper.generators.impl;
 
 
 import org.egdeveloper.attributes.DisplayName;
 import org.egdeveloper.data.model.MedicalTest;
 import org.egdeveloper.data.model.Patient;
+import org.egdeveloper.generators.IReportGenerator;
 import org.egdeveloper.helpers.EntityInfoGetterHelper;
 import org.joda.time.LocalDate;
 import org.joda.time.format.DateTimeFormat;
@@ -33,7 +34,7 @@ import java.util.Map;
  */
 
 @Component
-public class XMLReportGenerator implements IReportGenerator{
+public class XMLReportGenerator implements IReportGenerator {
 
     private DocumentBuilder documentBuilder;
     private Transformer transformer;

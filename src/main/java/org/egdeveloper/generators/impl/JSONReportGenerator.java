@@ -1,10 +1,11 @@
-package org.egdeveloper.generators;
+package org.egdeveloper.generators.impl;
 
 import com.fasterxml.jackson.core.JsonEncoding;
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonGenerator;
 import org.egdeveloper.data.model.MedicalTest;
 import org.egdeveloper.data.model.Patient;
+import org.egdeveloper.generators.IReportGenerator;
 import org.egdeveloper.helpers.EntityInfoGetterHelper;
 import org.joda.time.LocalDate;
 import org.joda.time.format.DateTimeFormat;
