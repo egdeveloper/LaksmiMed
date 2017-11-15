@@ -9,7 +9,10 @@ import lombok.ToString;
 import org.egdeveloper.attributes.*;
 import org.egdeveloper.data.model.customTypes.StoneXRay;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 
 @Entity
 @MedTest(StoneInVitroTest.class)

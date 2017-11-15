@@ -11,7 +11,6 @@ import org.egdeveloper.converters.serializers.PatientSerializer;
 import org.egdeveloper.data.model.Doctor;
 import org.egdeveloper.data.model.MedicalTest;
 import org.egdeveloper.data.model.Patient;
-import org.springframework.stereotype.Component;
 
 //@Component("customJSONMapper")
 public class CustomJSONMapper extends ObjectMapper {

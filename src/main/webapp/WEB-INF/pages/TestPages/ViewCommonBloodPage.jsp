@@ -10,38 +10,38 @@
 </head>
 <body style="padding-top: 70px;">
 <c:url var="addCommonBloodTest" value="/addCommonBloodTest"/>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <div class="navbar-brand">LaksmiMed</div>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="<c:url value="/main"/>">Главная</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Сайт <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="<c:url value="/about"/>">О сайте</a></li>
-          <li><a href="<c:url value="/help"/>">Помощь</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Статистика <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="<c:url value="/beforeTreatmentStatVisualization"/>">До лечения</a></li>
-          <li><a href="<c:url value="/indicatorDeviationsStatPage"/>">Отклонения от нормы</a></li>
-          <li><a href="<c:url value="/indicatorDeviationsForStoneTypeStatPage"/>">По типу камня</a></li>
-          <li><a href="<c:url value="/stoneComponentsStatPage"/>">Компоненты мочевых камней</a></li>
-        </ul>
-      </li>
-      <li><a href="<c:url value="/patientList"/>">Пациенты</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="<c:url value="/personalPage"/>">Личная страница</a></li>
-      <li><a href="<c:url value="/logout"/>">Выйти</a></li>
-    </ul>
-  </div>
-</nav>
 <div class="container">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <div class="navbar-brand">LaksmiMed</div>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="<c:url value="/doctor/patients"/>">Главная</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Сайт <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="<c:url value="/about"/>">О сайте</a></li>
+            <li><a href="<c:url value="/help"/>">Помощь</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Статистика <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="<c:url value="/pages/patients/statistics"/>">До лечения</a></li>
+            <li><a href="<c:url value="/pages/tests/stone-components"/>">Компоненты мочевых камней</a></li>
+            <li><a href="<c:url value="/pages/tests/indicator-stone"/>">Индикатор-камень</a></li>
+            <li><a href="<c:url value="/pages/tests/disease-stone"/>">Заболевание-камень</a></li>
+          </ul>
+        </li>
+        <li><a href="<c:url value="/doctor/patients"/>">Пациенты</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="<c:url value="/doctor/personal-page"/>">Личная страница</a></li>
+        <li><a href="<c:url value="/logout"/>">Выйти</a></li>
+      </ul>
+    </div>
+  </nav>
   <fieldset>
     <form:form modelAttribute="medicalTest">
     <div class="page-header">

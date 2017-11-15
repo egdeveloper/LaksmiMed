@@ -1,7 +1,6 @@
 package org.egdeveloper.service.web.impl;
 
 import org.egdeveloper.data.model.customTypes.TreatmentNumber;
-import org.egdeveloper.helpers.EntityInfoGetterHelper;
 import org.egdeveloper.service.statistics.IStatisticsService;
 import org.egdeveloper.service.web.IStatisticsWebService;
 import org.springframework.beans.factory.annotation.Autowired;

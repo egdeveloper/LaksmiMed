@@ -1,12 +1,10 @@
 package org.egdeveloper.helpers;
 
-import org.egdeveloper.attributes.Indicator;
 import org.egdeveloper.attributes.StatVariable;
 import org.egdeveloper.data.model.MedicalTest;
 import org.reflections.Reflections;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
 import java.lang.reflect.Field;
 import java.util.*;
 

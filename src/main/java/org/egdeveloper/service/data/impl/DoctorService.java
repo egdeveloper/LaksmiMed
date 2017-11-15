@@ -4,9 +4,7 @@ import org.egdeveloper.data.dao.IDoctorDAO;
 import org.egdeveloper.data.model.Doctor;
 import org.egdeveloper.service.data.IDoctorService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 

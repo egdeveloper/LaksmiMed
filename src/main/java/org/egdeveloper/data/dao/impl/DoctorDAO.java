@@ -2,12 +2,14 @@ package org.egdeveloper.data.dao.impl;
 
 import org.egdeveloper.data.dao.IDoctorDAO;
 import org.egdeveloper.data.model.Doctor;
-import org.hibernate.*;
+import org.hibernate.Hibernate;
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Transactional

@@ -5,7 +5,6 @@ import org.egdeveloper.data.model.Patient;
 import org.egdeveloper.generators.IReportGenerator;
 import org.joda.time.LocalDate;
 
-import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Map;
 

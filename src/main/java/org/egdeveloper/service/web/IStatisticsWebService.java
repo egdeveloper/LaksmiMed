@@ -1,9 +1,5 @@
 package org.egdeveloper.service.web;
 
-import org.egdeveloper.data.model.customTypes.TreatmentNumber;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-
 import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
 

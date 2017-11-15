@@ -22,7 +22,7 @@
             <div class="navbar-brand">LaksmiMed</div>
         </div>
         <ul class="nav navbar-nav">
-            <li><a href="<c:url value="/main"/>">Главная</a></li>
+            <li><a href="<c:url value="/doctor/patients"/>">Главная</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Сайт <span class="caret"></span></a>
                 <ul class="dropdown-menu">

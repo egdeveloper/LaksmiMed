@@ -19,7 +19,7 @@ import java.util.Map;
  */
 
 @Component
-public class MedTestMetaProvider implements IModelMetaProvider<Map<String, MedTestMeta>>{
+public class MedTestMetaProvider implements IModelMetaProvider<Map<String, MedTestMeta>> {
 
     private Map<String, MedTestMeta> metaInfo;
 

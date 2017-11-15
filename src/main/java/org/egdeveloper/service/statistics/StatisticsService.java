@@ -48,7 +48,7 @@ import static java.lang.Math.sqrt;
 
 @Transactional(readOnly = true)
 @Service
-public class StatisticsService implements IStatisticsService{
+public class StatisticsService implements IStatisticsService {
 
     private final IPatientService patientService;
 

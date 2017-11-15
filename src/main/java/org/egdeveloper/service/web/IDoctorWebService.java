@@ -2,8 +2,6 @@ package org.egdeveloper.service.web;
 
 import org.egdeveloper.data.model.Doctor;
 
-import java.util.List;
-
 /**
  * Developer: egdeveloper
  * Creation-Date: 11.08.16

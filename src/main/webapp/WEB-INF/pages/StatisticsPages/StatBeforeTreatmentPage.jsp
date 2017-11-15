@@ -14,7 +14,7 @@
                     <div class="navbar-brand">LaksmiMed</div>
                 </div>
                 <ul class="nav navbar-nav">
-                    <li><a href="<c:url value="/main"/>">Главная</a></li>
+                    <li><a href="<c:url value="/doctor/patients"/>">Главная</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Сайт <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -31,10 +31,10 @@
                             <li><a href="<c:url value="/pages/tests/disease-stone"/>">Заболевание-камень</a></li>
                         </ul>
                     </li>
-                    <li><a href="<c:url value="/patients"/>">Пациенты</a></li>
+                    <li><a href="<c:url value="/doctor/patients"/>">Пациенты</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="<c:url value="/personalPage"/>">Личная страница</a></li>
+                    <li><a href="<c:url value="/doctor/personal-page"/>">Личная страница</a></li>
                     <li><a href="<c:url value="/logout"/>">Выйти</a></li>
                 </ul>
             </div>

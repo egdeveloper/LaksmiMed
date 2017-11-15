@@ -5,7 +5,6 @@ import lombok.Setter;
 import org.egdeveloper.data.model.Doctor;
 import org.hibernate.validator.constraints.NotEmpty;
 
-import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 @Getter @Setter
